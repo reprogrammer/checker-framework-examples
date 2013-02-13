@@ -1,6 +1,6 @@
 PROGRAM = enumerate
 
-MAIN_CLASS = Enumerate
+MAIN_CLASS = Main
 
 include ../Makefile
 
