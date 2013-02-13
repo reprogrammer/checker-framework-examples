@@ -36,8 +36,7 @@ class Main {
     Node n1 = new Node(1, n2);
     Enumerate e = new Enumerate(n1);
     while (e.hasMoreElements()) {
-      @NonNull Node n = e.nextElement();
-      System.out.println(n.id);
+      System.out.println(e.nextElement().id);
     }
   }
 }
