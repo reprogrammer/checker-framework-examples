@@ -1,0 +1,42 @@
+// Automatically generated on Wed Mar 06 00:50:34 CET 2013
+// with the Julia analyser version March 4, 2013
+// by Julia Srl, Italy (http://www.juliasoft.com).
+
+// This annotation file contains information about the
+// fields, parameters and return values of the analysed program.
+// This information can be plugged inside the source code
+// of the analysed application by using a tool such as that
+// described at
+// http://types.cs.washington.edu/annotation-file-utilities/
+
+package checkers.nullness.quals:
+
+annotation @PolyNull:
+annotation @Nullable:
+annotation @Raw:
+
+package java.lang:
+
+annotation @SuppressWarnings:
+    String[] value
+
+
+package:
+
+class BH:
+    method <init>()V: @SuppressWarnings({"rawness", "nullness"})
+      receiver: @Raw
+
+class MathVector:
+
+class Node:
+    method loadTree(LMathVector;)V:
+      parameter #0:
+        type: @Nullable
+    method oldSubindex(LMathVector;)I:
+      parameter #0:
+        type: @Nullable
+
+class Tree:
+    method intcoord(LMathVector;)LMathVector;:
+      return: @Nullable
