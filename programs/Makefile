@@ -11,7 +11,7 @@ SRC_FOLDER = src
 
 CLASS_FOLDER = bin
 
-JAVA_FILES = $(wildcard $(SRC_FOLDER)/*.java)
+JAVA_FILES = $(shell find $(SRC_FOLDER) -type f -printf "%p ")
 
 JAR_FILE = $(PROGRAM).jar
 
