@@ -17,7 +17,7 @@ RM = rm
 
 MKDIR = mkdir
 
-JAVAC = $(CHECKER_FRAMEWORK_FOLDER)/checkers/binary/javac
+JAVAC = $(CHECKER_FRAMEWORK_FOLDER)/binary/javac
 
 JAVAC_OPTS = -Awarns -processor checkers.nullness.NullnessChecker
 
