@@ -5,6 +5,8 @@ DEPENDENCIES_FOLDER = ../../dependencies
 CHECKER_FRAMEWORK_FOLDER = \
 			   $(DEPENDENCIES_FOLDER)/checker-framework-releases/checker-framework
 
+CHECKER ?= checkers.nullness.NullnessChecker
+
 SRC_FOLDER = src
 
 CLASS_FOLDER = bin
@@ -19,7 +21,7 @@ MKDIR = mkdir
 
 JAVAC = $(CHECKER_FRAMEWORK_FOLDER)/binary/javac
 
-JAVAC_OPTS = -Awarns -processor checkers.nullness.NullnessChecker
+JAVAC_OPTS = -Awarns -processor $(CHECKER)
 
 JAR = jar
 
