@@ -1,4 +1,4 @@
-import checkers.nullness.quals.Nullable;
+import org.checkerframework.checker.nullness.qual.*;
 
 class Main {
   @Nullable Object o1, o2;
