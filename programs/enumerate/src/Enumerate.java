@@ -1,4 +1,4 @@
-import checkers.nullness.quals.*;
+import org.checkerframework.checker.nullness.qual.*;
 
 class Node {
   int id;
@@ -17,12 +17,12 @@ class Enumerate {
     this.current = node;
   }
 
-  @AssertNonNullIfTrue("current")
+  @EnsuresNonNullIf(expression="current", result=true)
   public boolean hasMoreElements() {
     return (current != null);
   }
 
-  @NonNullOnEntry("current")
+  @RequiresNonNull("current")
   public @Nullable Node nextElement() {
     Node retval = current;
     current = current.next;
