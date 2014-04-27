@@ -1,4 +1,4 @@
-import checkers.nullness.quals.*;
+import org.checkerframework.checker.nullness.qual.*;
 
 class Main {
   public static final void main(String args[]) {

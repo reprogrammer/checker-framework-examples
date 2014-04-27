@@ -1,11 +1,11 @@
 SHELL = /bin/bash
 
-DEPENDENCIES_FOLDER = ../../dependencies
+DEPENDENCIES_FOLDER = ../../deps
 
 CHECKER_FRAMEWORK_FOLDER = \
 			   $(DEPENDENCIES_FOLDER)/checker-framework-releases/checker-framework
 
-CHECKER ?= checkers.nullness.NullnessChecker
+CHECKER ?= org.checkerframework.checker.nullness.NullnessChecker
 
 SRC_FOLDER = src
 
@@ -19,7 +19,7 @@ RM = rm
 
 MKDIR = mkdir
 
-JAVAC = $(CHECKER_FRAMEWORK_FOLDER)/binary/javac
+JAVAC = $(CHECKER_FRAMEWORK_FOLDER)/checker/bin/javac
 
 JAVAC_OPTS = -Awarns -processor $(CHECKER)
 
