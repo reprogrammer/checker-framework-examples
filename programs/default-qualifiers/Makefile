@@ -1,6 +1,6 @@
 PROGRAM = default-qualifiers
-
-CHECKER = checkers.javari.JavariChecker,checkers.nullness.NullnessChecker
+CHECKER = \
+	  org.checkerframework.checker.javari.JavariChecker,org.checkerframework.checker.nullness.NullnessChecker
 
 MAIN_CLASS = p.Container
 

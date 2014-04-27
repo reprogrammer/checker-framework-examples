@@ -1,7 +1,7 @@
 @DefaultQualifiers({
-  @DefaultQualifier(checkers.javari.quals.ReadOnly.class),
+  @DefaultQualifier(org.checkerframework.checker.igj.qual.ReadOnly.class),
 })
 package p;
-import checkers.quals.DefaultQualifier;
-import checkers.quals.DefaultQualifiers;
+import org.checkerframework.framework.qual.DefaultQualifier;
+import org.checkerframework.framework.qual.DefaultQualifiers;
 

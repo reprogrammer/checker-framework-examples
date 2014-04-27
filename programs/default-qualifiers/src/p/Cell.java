@@ -1,6 +1,6 @@
 package p;
 
-import checkers.javari.quals.ReadOnly;
+import org.checkerframework.checker.igj.qual.ReadOnly;
 
 public class Cell {
 
