@@ -1,4 +1,5 @@
 import org.checkerframework.checker.nullness.qual.*;
+import org.checkerframework.checker.initialization.qual.*;
 
 public class TreeNode {
   Object data;
@@ -10,12 +11,10 @@ public class TreeNode {
     setChildren(l, r);
   }
 
-  void setChildren(TreeNode l, TreeNode r) {
+  @EnsuresNonNull({"left", "right"})
+  void setChildren(@UnderInitialization(TreeNode.class) TreeNode this, TreeNode l, TreeNode r) {
     left = l;
     right = r;
-  }
-
-  public static final void main(String args[]) {
   }
 
 }
